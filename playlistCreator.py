@@ -8,11 +8,6 @@ import pprint
 
 best_new_tracks = pitchfork.df2
 
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="a83a09741adc4b788ba382acc6fcdb09",
-                                               client_secret="9f0ebe92048b42ef9df2b05c623e5b8f",
-                                               redirect_uri="http://localhost:8888/callback",
-                                               scope="user-library-read playlist-modify-public",
-                                               ))
 
 
 user_id = sp.me()["id"]
